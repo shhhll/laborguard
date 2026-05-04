@@ -1,1 +1,48 @@
-
+@tailwind base;
+  @tailwind components;                                                              
+  @tailwind utilities; 
+                                                                                     
+  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pre
+  tendard.css');                                                                     
+                
+  @layer base {                                                                      
+    html { -webkit-tap-highlight-color: transparent; }      
+    body { @apply bg-surface text-gray-900 antialiased; }
+    input[type='number']::-webkit-inner-spin-button,                                 
+    input[type='number']::-webkit-outer-spin-button { -webkit-appearance: none; }    
+  }                                                                                  
+                                                                                     
+  @layer components {                                       
+    .card {                                                                          
+      @apply bg-white rounded-2xl shadow-card p-5;          
+    }                                                                                
+    .btn-primary {                                                                   
+      @apply bg-primary text-white font-semibold rounded-xl px-5 py-3                
+             hover:bg-primary-400 active:bg-primary-600                              
+             transition-colors duration-150 disabled:opacity-40;                     
+    }                                                           
+    .btn-outline {                                                                   
+      @apply border border-primary-500 text-primary font-semibold rounded-xl px-5
+  py-3                                                                               
+             hover:bg-primary-50 transition-colors duration-150;                     
+    }                                                           
+    .input-field {                                                                   
+      @apply w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3
+             text-gray-900 text-base placeholder-gray-400                            
+             focus:outline-none focus:ring-2 focus:ring-primary-200                  
+  focus:border-primary                                                               
+             transition-all duration-150;                                            
+    }                                                       
+    .badge-warning {                                                                 
+      @apply inline-flex items-center gap-1 bg-orange-50 text-accent-dark
+             text-xs font-semibold px-2.5 py-1 rounded-full;                         
+    }                                                                                
+    .badge-success {                                                                 
+      @apply inline-flex items-center gap-1 bg-green-50 text-green-700               
+             text-xs font-semibold px-2.5 py-1 rounded-full;                         
+    }                                                       
+    .badge-info {                                                                    
+      @apply inline-flex items-center gap-1 bg-primary-50 text-primary
+             text-xs font-semibold px-2.5 py-1 rounded-full;                         
+    }                                                       
+  }
