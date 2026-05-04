@@ -77,8 +77,8 @@
     label: string; amount: number; highlight?: boolean; sub?: string;
   }) {                                                                               
     return (                                                
-      <div className={`flex items-center justify-between py-3 ${highlight ? 'border-t
-   border-dashed border-gray-200 mt-1' : ''}`}>                                      
+      <div className={`flex items-center justify-between py-3 ${highlight ? 'border-t    
+  border-dashed border-gray-200 mt-1' : ''}`}>                                    
         <div>
           <p className={`text-sm ${highlight ? 'font-bold text-gray-900' :           
   'text-gray-600'}`}>{label}</p>                                                     
