@@ -25,8 +25,7 @@
             </div>                                                                
             <div className="hidden lg:flex flex-col">                                
               <span className="text-xs text-gray-400">안녕하세요</span>
-              <span className="text-sm font-semibold text-gray-800">오늘도 권리를    
-  지키세요 💪</span>                                                                      
+             <span className="text-sm font-semibold text-gray-800">오늘도 권리를 지키세요 💪</span>                                                                     
             </div>                                                                  ─
             <div className="flex items-center gap-2">                                
               <span className="badge-info">2026 최저임금 적용 중</span>              
