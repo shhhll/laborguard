@@ -108,8 +108,7 @@
     sub?: string;
   }) {                                                                               
     const rowClass = highlight
-      ? 'flex items-center justify-between py-3 border-t border-dashed               
-  border-gray-200 mt-1'                                                              
+    ? 'flex items-center justify-between py-3 border-t border-dashed border-gray-200 mt-1'                                              
       : 'flex items-center justify-between py-3';
                                                                                      
     const textClass = highlight                             
